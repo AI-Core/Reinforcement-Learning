@@ -1,0 +1,30 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+#notebook-container {
+	background-color: #ff822e;
+}
+.CodeMirror {
+	background-color: white;
+border-radius: 10px;
+}
+.body {
+	background-color: black;
+	color: #ff822e;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 17px;
+	font-family: montserrat;
+}
+
+.main-title {
+	font-size: 50px;
+	font-weight: 1000;
+	line-height: 1.0;
+}
+
+.title {
+	font-size: 30px;
+	line-height: 1.0;
+	font-weight: 1000;
+}
+</style>
