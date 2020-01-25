@@ -84,13 +84,10 @@ class GriddyEnv(gym.Env):
 
 		#move
 		new_agent_pos = np.array(agent_pos)
-		print(new_agent_pos)
 		LEFT = 0
 		DOWN = 1
 		RIGHT = 2
 		UP = 3
-		print('Agent_pos:', agent_pos)
-		
 		if action==LEFT:
 			new_agent_pos[1]-=1
 		elif action==RIGHT:
