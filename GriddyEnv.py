@@ -36,7 +36,7 @@ class GriddyEnv(gym.Env):
 		'video.frames_per_second' : 50
 	}
 
-	def __init__(self, width=4, height=4):
+	def __init__(self, width=4, height=4, time_penalty=False):
 		self.n_squares_height = width
 		self.n_squares_width = height
 
@@ -53,6 +53,7 @@ class GriddyEnv(gym.Env):
 		self.viewer = None
 		self.state = None
 
+		self.time_penalty = time_penalty
 		self.steps_beyond_done = None
 
 	def seed(self, seed=None):
@@ -110,6 +111,8 @@ class GriddyEnv(gym.Env):
 		#assign reward
 		if not done:
 			reward = 0
+			if self.time_penalty:
+				reward = -1
 			if self.n_steps>=1000:
 				self.steps_beyond_done = 0
 				done=True
