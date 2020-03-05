@@ -1,7 +1,3 @@
-# Deep Reinforcement learning
+# Deep Reinforcement Learning
 
-Our workshops follow the content in this order:
-1. Intro to RL
-2. DQN
-3. Policy Gradients
-4. Upside down RL
+Start with Intro to RL.ipynb and keep following linked next notebooks at the bottom.
